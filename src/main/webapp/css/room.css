@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'WAGURITTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* styles.css */
+
+body {
+    background-image: URL("../img/indexBackground.png");
+	width: 100%;
+  	height: 800px;
+	background-size: cover;
+    background-repeat: no-repeat;
+	font-family: 'WAGURITTF';
+	display: flex;
+	padding-top: 80px;
+	justify-content: center; /* 수평 가운데 정렬 */
+	align-items: center; /* 수직 가운데 정렬 */
+}
+
+.container {
+	display: flex;
+    justify-content: space-between;
+	border: 1px solid #000;
+	width: 80%;
+	height: 80%;
+}
+
+.sidebar-left {
+    width: 60%;
+    background-color: #FFF;
+    border: 1px solid #000;
+    text-align: center; /* 하위 요소 가운데 정렬을 위해 추가 */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-right {
+    width: 40%;
+    background-color: #FFF;
+    border: 1px solid #000;
+    text-align: center; /* 하위 요소 가운데 정렬을 위해 추가 */
+}
+
+button {
+	font-family: 'WAGURITTF';
+	font-size: 18px;
+	background-color: rgba(132, 206, 255, 0.747);
+	border: none;
+	border-radius: 30px;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+canvas {
+    grid-area: canvas;
+    /* position: absolute; */
+    border : 4px solid #000;
+    top : 5vh;
+    z-index: 1;
+}

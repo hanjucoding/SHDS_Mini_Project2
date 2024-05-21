@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'WAGURITTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* styles.css */
+
+body {
+    background-image: URL("../img/indexBackground.png");
+	width: 100%;
+  	height: 100%;
+	background-size: cover;
+    background-repeat: no-repeat;
+	font-family: 'WAGURITTF';
+}
+
+#container {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+	padding: 50px 0;
+	position: absolute;
+	width: 400px;
+	left: 75%;
+	top: 30%;
+}
+
+#loginContainer {
+	width: 400px;
+}
+
+#signupButton {
+    width: 100%;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+	width: 100%;
+}
+
+.inputText, .checkButton {
+    flex-grow: 1;
+}
+
+.inputText {
+    flex-grow: 2; /* 입력란이 버튼보다 넓게 설정 */
+    background-color: #eee;
+    border: none;
+	width: 100%;
+}
+
+.inputField {
+    flex-grow: 1; /* 입력란이 차지할 수 있는 최대 공간을 차지하도록 설정 */
+    background-color: #eee;
+    border: none;
+    width: 100%; /* 버튼 너비를 고려하여 계산 */
+    margin-right: 30px;
+}
+
+.checkButton {
+    width: 100px; /* 중복확인 버튼의 정확한 너비 설정 */
+    font-family: 'WAGURITTF';
+    font-size: 18px;
+    background-color: rgba(132, 206, 255, 0.747);
+    border: none;
+    border-radius: 5px;
+	text-align: center;
+    padding: 12px 15px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+form {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	height: 100%;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+button {
+	font-family: 'WAGURITTF';
+	font-size: 18px;
+	background-color: rgba(132, 206, 255, 0.747);
+	border: none;
+	border-radius: 30px;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+a {
+	color: #a3a3a3;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+}

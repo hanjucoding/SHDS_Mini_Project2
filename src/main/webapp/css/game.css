@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'WAGURITTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* styles.css */
+
+/* Global Styles */
+body {
+    background-image: url("../img/indexBackground.png");
+    width: 100%;
+    height: 100vh; /* Use viewport height for full screen height */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'WAGURITTF', sans-serif; /* Fallback to sans-serif */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Reset default margin */
+}
+
+/* Layout Styles */
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 80%; /* Adjust width for responsiveness */
+    height: 80vh; /* Adjust height for responsiveness */
+    background-color: #e6f7ff; /* Light blue background */
+    border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.left {
+    border-right: 1px solid #bfbfbf; /* Lighter border color */
+    padding: 20px; /* Add padding for spacing */
+    flex: 1; /* Take remaining space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.right {
+    padding: 20px; /* Add padding for spacing */
+    flex: 0 0 270px; /* Fixed width for right column */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Box Styles */
+.boxframe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add gap between boxes */
+}
+
+.box {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #bfbfbf; /* Lighter border color */
+    border-radius: 5px; /* Add border radius */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.box textarea {
+    width: 100%; /* Full width textarea */
+    height: 100%; /* Full height textarea */
+    resize: none;
+    border: none; /* Remove textarea border */
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 5px; /* Add border radius */
+}
+
+/* Button Styles */
+.btn {
+    text-decoration: none;
+    font-size: 1.2rem; /* Decrease button font size */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Adjust padding */
+    margin: 10px 0; /* Adjust margin */
+    display: inline-block;
+    border-radius: 5px; /* Add border radius */
+    transition: all 0.3s; /* Smooth transition */
+    cursor: pointer; /* Add cursor pointer */
+}
+
+.btn:hover {
+    transform: translateY(-3px); /* Add hover effect */
+}
+
+.btn:active {
+    transform: translateY(2px); /* Add active effect */
+}
+
+/* Specific Button Styles */
+.btn.blue {
+    background-color: #007bff; /* Blue color */
+}
+
+.btn.red {
+    background-color: #dc3545; /* Red color */
+}
+
+.btn.yellow {
+    background-color: #ffc107; /* Yellow color */
+}
+
+.btn.gray {
+    background-color: #6c757d; /* Gray color */
+}
+
+/* Text Color Reverse Button Style */
+.btn.text-color-reverse {
+    color: #000000; /* Black text color */
+}
